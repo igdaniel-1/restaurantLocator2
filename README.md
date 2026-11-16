@@ -17,5 +17,4 @@ Launch the Python VM
 (First Run Only) Download:
 FastAPI, SQLAlchemy, GeoAlchemy2, httpx, pydantic-settings
 
-```pip install fastapi 'uvicorn[standard]' sqlalchemy 'psycopg[binary]'```
-```pip install 'psycopg[binary]' geoalchemy2 httpx pydantic-settings```
+```pip install fastapi 'uvicorn[standard]' sqlalchemy 'psycopg[binary]' geoalchemy2 httpx pydantic-settings```
