@@ -23,4 +23,10 @@ FastAPI, SQLAlchemy, GeoAlchemy2, httpx, pydantic-settings
 Find restaurants in Lower Manhattan:
 
 ```python -m app.import_restaurants 40.7127 -74.0059 --radius 2000```
-Change the area by updating the lat/long coordinates.
+
+Downtown Brooklyn:
+```python -m app.import_restaurants 40.6980 -73.9871 --radius 2000```
+
+Fort Greene Park:
+```python -m app.import_restaurants 40.6897 -73.9734 --radius 500```
+Change the region by updating the lat/long coordinates. Change the search radius by updating the final integer.
