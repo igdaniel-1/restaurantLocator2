@@ -13,6 +13,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description='Import restaurants around a lat/lng')
     parser.add_argument('lat', type=float)
     parser.add_argument('lng', type=float)
+    # radius is in meters
     parser.add_argument('--radius', type=float, default=2000)
     args = parser.parse_args()
 

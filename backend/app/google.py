@@ -12,7 +12,7 @@ FIELDS = ','.join([
 
 # print('FIELDS:',FIELDS)
 
-
+# radius is in meters
 def search_nearby(lat: float, lng: float, radius: float) -> list[dict]:
     body = {
         'includedTypes': ['restaurant'],

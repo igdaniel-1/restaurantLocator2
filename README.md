@@ -20,7 +20,10 @@ FastAPI, SQLAlchemy, GeoAlchemy2, httpx, pydantic-settings
 ```pip install fastapi 'uvicorn[standard]' sqlalchemy 'psycopg[binary]' geoalchemy2 httpx pydantic-settings```
 
 ## Test Google Places API
-Change the region by updating the lat/long coordinates. Change the search radius by updating the final integer.
+Change the region by updating the lat/long coordinates. Change the search radius by updating the final integer (measured in meters), or leave empty to use the default radius. Default radius is set to 2000 meters if not specified.
+
+This site can be useful for converting addresses into Lat/Long [coordinates](https://www.latlong.net/).
+
 
 ### Test Cases
 Lower Manhattan: ```python -m app.import_restaurants 40.7127 -74.0059 --radius 2000```
