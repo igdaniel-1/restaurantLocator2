@@ -18,3 +18,9 @@ Launch the Python VM
 FastAPI, SQLAlchemy, GeoAlchemy2, httpx, pydantic-settings
 
 ```pip install fastapi 'uvicorn[standard]' sqlalchemy 'psycopg[binary]' geoalchemy2 httpx pydantic-settings```
+
+## Test Google Places API
+Find restaurants in Lower Manhattan:
+
+```python -m app.import_restaurants 40.7127 -74.0059 --radius 2000```
+Change the area by updating the lat/long coordinates.
